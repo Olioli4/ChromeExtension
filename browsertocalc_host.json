@@ -1,0 +1,9 @@
+{
+  "name": "com.example.browsertocalc",
+  "description": "Send selection to LibreOffice Calc",
+  "path": "D:\\Browsertocalc\\uno_to_calc_wrapper.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://bfhgdjhbefbelcgkhepkmajaccbamikj/"
+  ]
+}

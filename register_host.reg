@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\browsertocalc_host]
+@="d:\\Browsertocalc\\browsertocalc_host.json"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\browsertocalc_host]
+@="d:\\Browsertocalc\\browsertocalc_host.json"
