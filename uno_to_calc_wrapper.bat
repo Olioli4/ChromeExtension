@@ -1,5 +1,5 @@
 @echo off
-REM Wrapper to run uno_to_calc.py for native messaging
+REM Wrapper to run main.py for native messaging
 set PYTHONIOENCODING=utf-8
 set SCRIPT_DIR=%~dp0
 set PYTHON_EXE=python
@@ -16,4 +16,4 @@ if %ERRORLEVEL%==0 (
     exit /b 1
 )
 
-%PYTHON_EXE% "%SCRIPT_DIR%uno_to_calc.py"
+%PYTHON_EXE% "%SCRIPT_DIR%main.py"
