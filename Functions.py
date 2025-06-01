@@ -41,4 +41,5 @@ def send_native_message(obj):
     sys.stdout.buffer.flush()
 
 def log_debug(message):
-    print(f"DEBUG: {message}")
+    with open("debug.log", "a", encoding="utf-8") as f:
+        f.write(f"DEBUG: {message}\n")
