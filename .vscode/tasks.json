@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "read-user-instructions-on-start",
+			"type": "shell",
+			"command": "echo Please read the USER INSTRUCTIONS for this project. Open them here: vscode://file/${workspaceFolder}/Instructions.instructions.md",
+			"isBackground": false,
+			"group": "build",
+			"runOn": "folderOpen"
+		}
+	]
+}

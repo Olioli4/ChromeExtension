@@ -1,0 +1,11 @@
+{
+    "auto-run-command.commands": [
+        {
+            "command": "workbench.action.tasks.runTask",
+            "args": "read-user-instructions-on-start",
+            "when": [
+                "workspaceContains:Instructions.instructions.md"
+            ]
+        }
+    ]
+}
