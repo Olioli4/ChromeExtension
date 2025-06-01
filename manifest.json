@@ -1,0 +1,31 @@
+{
+  "name": "BrowserToCalc",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Send selected text or page info to LibreOffice Calc via native messaging.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "contextMenus",
+    "nativeMessaging",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "Send to watchlist"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["pycache/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
