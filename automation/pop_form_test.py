@@ -1,6 +1,8 @@
-from PyQt6.QtWidgets import QApplication
-from main import inputbox
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from Functions import inputbox
+from PyQt6.QtWidgets import QApplication
 
 if __name__ == "__main__":
     app = QApplication.instance()

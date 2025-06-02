@@ -6,11 +6,21 @@ import os
 class ToggleImageWidget(QLabel):
     def __init__(self, parent=None):
         super().__init__(parent)
-        assets_dir = os.path.join(os.path.dirname(__file__), 'Assets')
+        # Use correct assets directory (lowercase)
+        assets_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets')
+        # Debug: print asset paths and existence
+        print(f"Assets dir: {assets_dir}")
+        for fname in [
+            'checkbox_unchecked.png',
+            'checkbox_unchecked_hover.png',
+            'checkbox_checked.png',
+            'checkbox_checked_hover.png']:
+            fpath = os.path.join(assets_dir, fname)
+            print(f"{fname}: exists={os.path.exists(fpath)} path={fpath}")
         self.icon_unchecked = QPixmap(os.path.join(assets_dir, 'checkbox_unchecked.png'))
-        self.icon_unchecked_hover = QPixmap(os.path.join(assets_dir, 'checkbox_unchecked_hover.png.png'))
+        self.icon_unchecked_hover = QPixmap(os.path.join(assets_dir, 'checkbox_unchecked_hover.png'))
         self.icon_checked = QPixmap(os.path.join(assets_dir, 'checkbox_checked.png'))
-        self.icon_checked_hover = QPixmap(os.path.join(assets_dir, 'checkbox_checked_hover.png.png'))
+        self.icon_checked_hover = QPixmap(os.path.join(assets_dir, 'checkbox_checked_hover.png'))
         self.checked = False
         self.focused = False
         self.setAlignment(Qt.AlignmentFlag.AlignCenter)

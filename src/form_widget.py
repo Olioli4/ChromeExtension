@@ -5,14 +5,31 @@ from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QFont, QColor, QPainter, QBrush, QPixmap
 import os
 
-class ToggleImageWidget(QLabel):
+class ToggleImageWidget(QLabel):    
     def __init__(self, parent=None):
         super().__init__(parent)
-        assets_dir = os.path.join(os.path.dirname(__file__), 'Assets')
-        self.icon_unchecked = QPixmap(os.path.join(assets_dir, 'checkbox_unchecked.png'))
-        self.icon_unchecked_hover = QPixmap(os.path.join(assets_dir, 'checkbox_unchecked_hover.png.png'))
-        self.icon_checked = QPixmap(os.path.join(assets_dir, 'checkbox_checked.png'))
-        self.icon_checked_hover = QPixmap(os.path.join(assets_dir, 'checkbox_checked_hover.png.png'))
+        # Fix path to point to the correct assets directory
+        assets_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets')
+        
+        # Debug: print the assets directory path
+        print(f"Assets directory: {assets_dir}")
+        
+        unchecked_path = os.path.join(assets_dir, 'checkbox_unchecked.png')
+        unchecked_hover_path = os.path.join(assets_dir, 'checkbox_unchecked_hover.png')
+        checked_path = os.path.join(assets_dir, 'checkbox_checked.png')
+        checked_hover_path = os.path.join(assets_dir, 'checkbox_checked_hover.png')
+        
+        # Debug: Check if files exist
+        print(f"Unchecked exists: {os.path.exists(unchecked_path)}")
+        print(f"Unchecked hover exists: {os.path.exists(unchecked_hover_path)}")
+        print(f"Checked exists: {os.path.exists(checked_path)}")
+        print(f"Checked hover exists: {os.path.exists(checked_hover_path)}")
+        
+        self.icon_unchecked = QPixmap(unchecked_path)
+        self.icon_unchecked_hover = QPixmap(unchecked_hover_path)
+        self.icon_checked = QPixmap(checked_path)
+        self.icon_checked_hover = QPixmap(checked_hover_path)
+        
         self.checked = False
         self.focused = False
         self.setAlignment(Qt.AlignmentFlag.AlignCenter)

@@ -10,16 +10,17 @@ from collections import OrderedDict
 ODS_PATH = "C:\\Users\\olivi\\Documents\\MeineAblage.ods"
 SHEET_NAME = "Sheet1"
 
-def append_row_to_ods(text, second_value, date_str, url, checkbox_state=False):
+def append_row_to_ods(text, second_value, date_str, url, checkbox_state=False, image_src=""):
     """
     Append a row to the ODS spreadsheet with the given values.
+    Columns: text, second_value, date_str, url, checkbox_state, image_src
     """
     if os.path.exists(ODS_PATH):
         data = get_data(ODS_PATH)
         sheet = data.get(SHEET_NAME, [])
     else:
         sheet = []
-    sheet.append([text, second_value, date_str, url, "1" if checkbox_state else "0"])
+    sheet.append([text, second_value, date_str, url, "1" if checkbox_state else "0", image_src])
     data = OrderedDict()
     data[SHEET_NAME] = sheet
     save_data(ODS_PATH, data)

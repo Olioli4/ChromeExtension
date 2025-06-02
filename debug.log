@@ -1,0 +1,61 @@
+DEBUG: Script starting...
+DEBUG: Received message: {'url': 'https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html'}
+DEBUG: No Chrome message, showing inputbox for first column
+DEBUG: Showing inputbox for second column
+DEBUG: Second value: , Checkbox: False, New edit: 
+DEBUG: Saving to ODS: text=Fill, second=, date=02.06.2025, url=https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html, checkbox=False
+DEBUG: Successfully saved to ODS
+DEBUG: Sending response to Chrome
+DEBUG: Response sent successfully
+DEBUG: Script completed successfully
+DEBUG: Script starting...
+DEBUG: Received message: {'url': 'chrome://extensions/?errors=bfhgdjhbefbelcgkhepkmajaccbamikj'}
+DEBUG: No Chrome message, showing inputbox for first column
+DEBUG: Showing inputbox for second column
+DEBUG: Second value: , Checkbox: False, New edit: 
+DEBUG: Saving to ODS: text=Fill, second=, date=02.06.2025, url=chrome://extensions/?errors=bfhgdjhbefbelcgkhepkmajaccbamikj, checkbox=False
+DEBUG: Successfully saved to ODS
+DEBUG: Sending response to Chrome
+DEBUG: Response sent successfully
+DEBUG: Script completed successfully
+DEBUG: Script starting...
+DEBUG: Received message: {'text': 'd Reda s', 'url': 'https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html'}
+DEBUG: Using text from Chrome: d Reda s
+DEBUG: Showing inputbox for second column
+DEBUG: Second value: , Checkbox: False, New edit: 
+DEBUG: Saving to ODS: text=d Reda s, second=, date=02.06.2025, url=https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html, checkbox=False
+DEBUG: Successfully saved to ODS
+DEBUG: Sending response to Chrome
+DEBUG: Response sent successfully
+DEBUG: Script completed successfully
+DEBUG: Script starting...
+DEBUG: Received message: {'url': 'https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html'}
+DEBUG: No Chrome message, showing inputbox for first column
+DEBUG: Showing inputbox for second column
+DEBUG: Second value: , Checkbox: False, New edit: 
+DEBUG: Saving to ODS: text=Fill, second=, date=02.06.2025, url=https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html, checkbox=False
+DEBUG: Successfully saved to ODS
+DEBUG: Sending response to Chrome
+DEBUG: Response sent successfully
+DEBUG: Script completed successfully
+DEBUG: Script starting...
+DEBUG: Received message: {'text': 'Plaine Orientale - Saison 1', 'url': 'https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html', 'imageSrc': 'https://image.tmdb.org/t/p/w500/veo6qVkv7hbXq3vshJnXyuHsGt4.jpg'}
+DEBUG: Using text from Chrome: Plaine Orientale - Saison 1
+DEBUG: Image source: https://image.tmdb.org/t/p/w500/veo6qVkv7hbXq3vshJnXyuHsGt4.jpg
+DEBUG: Showing inputbox for second column
+DEBUG: Second value: 1, Checkbox: False, New edit: Plaine Orientale - Saison 1
+DEBUG: Saving to ODS: text=Plaine Orientale - Saison 1, second=1, date=02.06.2025, url=https://fsmirror57.lol/s-tv/15121018-plaine-orientale-saison-1-2025.html, checkbox=False, image_src=https://image.tmdb.org/t/p/w500/veo6qVkv7hbXq3vshJnXyuHsGt4.jpg
+DEBUG: Successfully saved to ODS
+DEBUG: Sending response to Chrome
+DEBUG: Response sent successfully
+DEBUG: Script completed successfully
+DEBUG: Script starting...
+DEBUG: Received message: {'url': 'http://127.0.0.1/output.html'}
+DEBUG: No Chrome message, showing inputbox for first column
+DEBUG: Showing inputbox for second column
+DEBUG: Second value: , Checkbox: False, New edit: 
+DEBUG: Saving to ODS: text=Fill, second=, date=02.06.2025, url=http://127.0.0.1/output.html, checkbox=False, image_src=
+DEBUG: Successfully saved to ODS
+DEBUG: Sending response to Chrome
+DEBUG: Response sent successfully
+DEBUG: Script completed successfully

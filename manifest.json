@@ -9,7 +9,9 @@
   "permissions": [
     "contextMenus",
     "nativeMessaging",
-    "tabs"
+    "tabs",
+    "downloads",
+    "scripting"
   ],
   "host_permissions": [
     "<all_urls>"
