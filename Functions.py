@@ -43,3 +43,5 @@ def send_native_message(obj):
 def log_debug(message):
     with open("debug.log", "a", encoding="utf-8") as f:
         f.write(f"DEBUG: {message}\n")
+
+# Ensure all imports reference root-level files only

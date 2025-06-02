@@ -19,4 +19,4 @@ if %ERRORLEVEL%==0 (
 REM Ensure no _python_ folder is used for cache, use 'python' only
 REM (No action needed, as only 'python' is used above)
 
-%PYTHON_EXE% "%SCRIPT_DIR%src\main.py"
+%PYTHON_EXE% "%SCRIPT_DIR%main.py"
