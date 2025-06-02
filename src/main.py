@@ -2,7 +2,7 @@
 # Native messaging host and PyQt6 dialog for writing to ODS spreadsheet
 
 from Functions import append_row_to_ods, read_native_message, send_native_message, log_debug
-from form_widgets import inputbox
+from form_widget import inputbox
 import os
 import datetime
 import sys
