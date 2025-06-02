@@ -17,10 +17,9 @@
     "<all_urls>"
   ],
   "icons": {
-    "16": "assets/checkbox_unchecked.png",
-    "32": "assets/checkbox_checked.png",
-    "48": "assets/checkbox_checked_hover.png",
-    "128": "assets/checkbox_unchecked_hover.png"
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   },
   "action": {
     "default_title": "Send to watchlist"

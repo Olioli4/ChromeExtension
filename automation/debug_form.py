@@ -1,7 +1,7 @@
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-from form_widgets import inputbox
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from form_widget import inputbox
 from PyQt6.QtWidgets import QApplication
 
 if __name__ == "__main__":
